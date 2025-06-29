@@ -1,0 +1,117 @@
+.fm-serif {
+    font-family: 'Noto Serif TC', 'Source Han Serif TC', serif;
+}
+
+.fm-sans {
+    font-family: 'Noto Sans CJK TC', 'Source Han Sans TC', sans-serif;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-52 {
+    font-size: 52px;
+}
+
+.fs-80 {
+    font-size: 80px;
+}
+
+.tw {
+    color: #FFFFFF;
+}
+
+.t-black {
+    color: black;
+}
+
+.tb-1 {
+    color: #C8E7E9;
+}
+
+.tb-2 {
+    color: #5AC9FB;
+}
+
+.tb-3 {
+    color: #293ECD;
+}
+
+.t-stroke-b-1 {
+    -webkit-text-stroke: 2px #5AC9FB;
+    color: transparent;
+}
+
+.t-stroke-b-2 {
+    -webkit-text-stroke: 2px #293ECD;
+    color: transparent;
+}
+
+.lh {}
+
+.lw {}

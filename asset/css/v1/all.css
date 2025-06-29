@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #65C9F9;
+    --back-color: #222222;
+    --back-color-hover: #535353;
+    --back-color-hover-2: #686868;
+    --header-height: 114px;
+}
+
+body {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: overlay;
+    /* overflow-x: hidden; */
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #313131;
+    border-radius: 10px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+}
+
+#go-top {
+    position: fixed;
+    top: 70%;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#go-top:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+#top {
+    height: 200px;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+
+
+.card {
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.run-group-container {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 320px;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.run-group {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    animation: 16s run linear infinite;
+}
+
+.run-group img {
+    height: 100%;
+    width: 300px;
+    object-fit: contain;
+    object-position: center;
+    padding: 0 10px;
+}
+
+.run-group:nth-child(2) {
+    animation-delay: -4s;
+}
+
+.run-group:nth-child(3) {
+    animation-delay: -8s;
+}
+
+.run-group:nth-child(4) {
+    animation-delay: -12s;
+}
+
+@keyframes run {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
