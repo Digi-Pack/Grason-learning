@@ -116,7 +116,7 @@ input[type="checkbox"] {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     #hd {
         background-color: #222222;
         /* position: relative; */
@@ -167,11 +167,16 @@ input[type="checkbox"] {
     #hd-menu-1 li:nth-child(3) {
         position: relative;
     }
-
+    #hd-menu-2-control{
+        overflow: hidden;
+        transition: padding-bottom 0.3s ease;
+    }
     #hd-menu-1 #hd-menu-2-check:checked~li:nth-child(3) #hd-menu-2-control {
         padding-bottom: 132px;
     }
-
+    #hd-menu-1 #hd-menu-2-check:checked~li:nth-child(3) #hd-menu-2{
+        opacity: 1;
+    }
     #hd-section {
         width: 100%;
         display: flex;
@@ -181,9 +186,10 @@ input[type="checkbox"] {
 
     #hd-menu-2 {
         width: 100%;
-        position: absolute;
         top: 54px;
         left: 0;
+        opacity: 0;
+        transition: opacity 2s linear;
     }
 
     #hd-menu-2>li {
@@ -200,7 +206,7 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 800px) and (max-width: 1200px) {
     #hd-menu-1 {
         gap: 40px;
     }

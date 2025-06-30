@@ -1,209 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./asset/css/all.css" />
+        <link rel="stylesheet" href="./asset/css/font.css" />
+        <link rel="stylesheet" href="./asset/css/header.css" />
+        <link rel="stylesheet" href="./asset/css/footer.css" />
+        <link rel="stylesheet" href="./asset/css/section.css" />
+        <link rel="stylesheet" href="./asset/css/contact.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/all.css">
-    <link rel="stylesheet" href="./asset/css/font.css">
-    <link rel="stylesheet" href="./asset/css/header.css">
-    <link rel="stylesheet" href="./asset/css/footer.css">
-    <link rel="stylesheet" href="./asset/css/contact.css">
-
-    <title>宮璇-形象網站-主頁</title>
-</head>
-
-<body>
-    <header id="hd" class="d-flex align-center justify-between">
-        <section id="hd-section">
-            <a href="./index.html">
-                <img src="./asset/image/logo.png" alt="logo">
-            </a>
-            <input type="checkbox" id="hd-menu-1-check">
-            <label for="hd-menu-1-check" id="hd-menu-1-control" class="d-flex flex-column align-end justify-around">
-                <div></div>
-                <div></div>
-            </label>
-        </section>
-        <ul id="hd-menu-1" class="d-flex align-center justify-between">
-            <input type="checkbox" id="hd-menu-2-check">
-            <li>
-                <a href="./about-us.html" class="fm-serif tw fs-20">
-                    關於我們
+        <title>宮璇-形象網站-聯絡我們</title>
+    </head>
+    <style>
+        @media screen and (max-width: 850px) {
+            main .fs-24 {
+        font-size: 14px;
+    }
+            main .fs-52,
+            .fs-80 {
+                font-size: 32px;
+            }
+        }
+    </style>
+    <body>
+        <header id="hd" class="d-flex align-center justify-between">
+            <section id="hd-section">
+                <a href="./index.html">
+                    <img src="./asset/image/logo.png" alt="logo" />
                 </a>
-            </li>
-            <li>
-                <label for="hd-menu-2-check" id="hd-menu-2-control"
-                    class="fm-serif tw fs-20 d-flex align-center justify-between">
-                    服務項目
-                    <div class="d-flex align-start justify-center">
-                        <span></span>
-                    </div>
+                <input type="checkbox" id="hd-menu-1-check" />
+                <label
+                    for="hd-menu-1-check"
+                    id="hd-menu-1-control"
+                    class="d-flex flex-column align-end justify-around"
+                >
+                    <div></div>
+                    <div></div>
                 </label>
-                <ul id="hd-menu-2" class="flex-column">
-                    <li class="bg-dg">
-                        <a href="./service-1.html" class="fm-serif tw fs-20 fw-300">
-                            智能代購平台
-                        </a>
-                    </li>
-                    <li class="bg-dg">
-                        <a href="./service-2.html" class="tw fm-serif tw fs-20 fw-300">
-                            AI優化生產線
-                        </a>
-                    </li>
-                    <li class="bg-dg">
-                        <a href="./service-3.html" class="fm-serif tw fs-20 fw-300">
-                            AI門禁辨識系統
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="./technology.html" class="fm-serif tw fs-20">
-                    技術與創新
-                </a>
-            </li>
-            <li>
-                <a href="./contact.html" class="fm-serif tw fs-20">
-                    聯絡我們
-                </a>
-            </li>
-        </ul>
-    </header>
-    <main id="top">
-
-        <section class="container">
-            <section id="m-section-1" class="container-child">
-                <div class="breadcrumb-container">
-                    <ul class="breadcrumb">
-                        <li>
-                            <a href="./index.html" class="fw-500 fs-20 fm-serif t-black">首頁</a>
+            </section>
+            <ul id="hd-menu-1" class="d-flex align-center justify-between">
+                <input type="checkbox" id="hd-menu-2-check" />
+                <li>
+                    <a href="./about-us.html" class="fm-serif tw fs-20">
+                        關於我們
+                    </a>
+                </li>
+                <li>
+                    <label
+                        for="hd-menu-2-check"
+                        id="hd-menu-2-control"
+                        class="fm-serif tw fs-20 d-flex align-center justify-between"
+                    >
+                        服務項目
+                        <div class="d-flex align-start justify-center">
+                            <span></span>
+                        </div>
+                    </label>
+                    <ul id="hd-menu-2" class="flex-column">
+                        <li class="bg-dg">
+                            <a
+                                href="./service-1.html"
+                                class="fm-serif tw fs-20 fw-300"
+                            >
+                                智能代購平台
+                            </a>
                         </li>
-                        <li class="fw-500 fs-20 fm-serif t-black">/</li>
-                        <li>
-                            <a href="./contact.html" class="fw-500 fs-20 fm-serif t-black">服務項目 AI門禁辨識系統</a>
+                        <li class="bg-dg">
+                            <a
+                                href="./service-2.html"
+                                class="tw fm-serif tw fs-20 fw-300"
+                            >
+                                AI優化生產線
+                            </a>
+                        </li>
+                        <li class="bg-dg">
+                            <a
+                                href="./service-3.html"
+                                class="fm-serif tw fs-20 fw-300"
+                            >
+                                AI門禁辨識系統
+                            </a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <p class="t-stroke-b-1 fw-900 fs-80 fm-sans">Contact Us</p>
-                    <h1 class="t-black fw-700 fs-52 fm-serif">聯絡我們</h1>
-                </div>
-                <div>
-                    <div class="d-flex align-center">
-                        <p class="fm-sans fs-24 fw-500">公司名稱</p>
-                        <p class="fm-sans fs-24 fw-300">宮璇股份有限公司</p>
+                </li>
+                <li>
+                    <a href="./technology.html" class="fm-serif tw fs-20">
+                        技術與創新
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html" class="fm-serif tw fs-20">
+                        聯絡我們
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main id="top">
+            <section class="container">
+                <section id="m-section-1" class="child-container">
+                    <div class="breadcrumb-container">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a
+                                    href="./index.html"
+                                    class="fw-500 fs-20 fm-serif t-black"
+                                    >首頁</a
+                                >
+                            </li>
+                            <li class="fw-500 fs-20 fm-serif t-black">/</li>
+                            <li>
+                                <a
+                                    href="./contact.html"
+                                    class="fw-500 fs-20 fm-serif t-black"
+                                    >服務項目 AI門禁辨識系統</a
+                                >
+                            </li>
+                        </ul>
                     </div>
-                    <hr>
-                    <div class="d-flex align-center">
-                        <p class="fm-sans fs-24 fw-500">設立日期</p>
-                        <p class="fm-sans fs-24 fw-300">2025年05月15日</p>
+                    <div class="main-Leaflet">
+                        <p class="t-stroke-b-1 fw-900 fs-80 fm-sans">
+                            Contact Us
+                        </p>
+                        <h1 class="t-black fw-700 fs-52 fm-serif">聯絡我們</h1>
                     </div>
-                    <hr>
-                    <div class="d-flex align-center">
-                        <p class="fm-sans fs-24 fw-500">統一編號</p>
-                        <p class="fm-sans fs-24 fw-300">60792282</p>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-center">
-                        <p class="fm-sans fs-24 fw-500">客服電話</p>
-                        <p class="fm-sans fs-24 fw-300">04-25601260 / 0960962622</p>
-                    </div>
-                    <hr>
-                    <div class="d-flex align-center">
-                        <p class="fm-sans fs-24 fw-500">客服電話</p>
-                        <div class="d-flex flex-column">
-                            <div class="d-flex align-center justify-between">
-                                <p>臺北市大安區忠孝東路4段148號6樓</p>
-                                <a href="https://maps.app.goo.gl/e1Gtp6MWvPiGFjy18" class="fm-sans fs-20 fw-500">Google
-                                    Maps</a>
-                            </div>
-                            <div class="d-flex align-center justify-between">
-                                <p>台中市大雅區神林南路21巷65號</p>
-                                <a href="https://maps.app.goo.gl/sooVV7NcFXgWDiZe8" class="fm-sans fs-20 fw-500">Google
-                                    Maps</a>
+                </section>
+                <section id="m-section-2" class="child-container">
+                    <div id="contact-info">
+                        <div class="d-flex align-center">
+                            <p class="fm-sans fs-24 fw-500">公司名稱</p>
+                            <p class="fm-sans fs-24 fw-300">宮璇股份有限公司</p>
+                        </div>
+                        <hr />
+                        <div class="d-flex align-center">
+                            <p class="fm-sans fs-24 fw-500">設立日期</p>
+                            <p class="fm-sans fs-24 fw-300">2025年05月15日</p>
+                        </div>
+                        <hr />
+                        <div class="d-flex align-center">
+                            <p class="fm-sans fs-24 fw-500">統一編號</p>
+                            <p class="fm-sans fs-24 fw-300">60792282</p>
+                        </div>
+                        <hr />
+                        <div class="d-flex align-center">
+                            <p class="fm-sans fs-24 fw-500">客服電話</p>
+                            <p class="fm-sans fs-24 fw-300">
+                                04-25601260 / 0960962622
+                            </p>
+                        </div>
+                        <hr />
+                        <div class="d-flex align-center">
+                            <p class="fm-sans fs-24 fw-500">客服電話</p>
+                            <div class="d-flex flex-column">
+                                <div
+                                    class="d-flex align-center justify-between"
+                                >
+                                    <p class="fm-sans fs-24 fw-300">
+                                        臺北市大安區忠孝東路4段148號6樓
+                                    </p>
+                                    <a
+                                        href="https://maps.app.goo.gl/e1Gtp6MWvPiGFjy18"
+                                        class="fm-sans fs-20 fw-300"
+                                        >Google Maps</a
+                                    >
+                                </div>
+                                <div
+                                    class="d-flex align-center justify-between"
+                                >
+                                    <p class="fm-sans fs-24 fw-300">
+                                        台中市大雅區神林南路21巷65號
+                                    </p>
+                                    <a
+                                        href="https://maps.app.goo.gl/sooVV7NcFXgWDiZe8"
+                                        class="fm-sans fs-20 fw-500"
+                                        >Google Maps</a
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+            </section>
+        </main>
+        <footer class="bg-dg d-flex flex-column align-center justify-center">
+            <section id="ft-section-1">
+                <div>
+                    <a href="index.html">
+                        <img src="./asset/image/logo.png" alt="logo" />
+                    </a>
+                    <ul class="">
+                        <li class="d-flex align-center justify-start">
+                            <svg
+                                width="18"
+                                height="26"
+                                viewBox="0 0 18 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9 0.75C4.16945 0.75 0.25 4.27789 0.25 8.625C0.25 15.625 9 25.25 9 25.25C9 25.25 17.75 15.625 17.75 8.625C17.75 4.27789 13.8305 0.75 9 0.75ZM9 13C8.30777 13 7.63108 12.7947 7.0555 12.4101C6.47993 12.0256 6.03133 11.4789 5.76642 10.8394C5.50151 10.1999 5.4322 9.49612 5.56725 8.81718C5.7023 8.13825 6.03564 7.51461 6.52513 7.02513C7.01461 6.53564 7.63825 6.2023 8.31718 6.06725C8.99612 5.9322 9.69985 6.00151 10.3394 6.26642C10.9789 6.53133 11.5256 6.97993 11.9101 7.5555C12.2947 8.13108 12.5 8.80777 12.5 9.5C12.499 10.4279 12.1299 11.3176 11.4738 11.9738C10.8176 12.6299 9.92795 12.999 9 13Z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <p class="fm-serif tw fs-20">
+                                臺北市大安區忠孝東路4段148號6樓
+                            </p>
+                        </li>
+                        <li class="d-flex align-center justify-start">
+                            <svg
+                                width="18"
+                                height="26"
+                                viewBox="0 0 18 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9 0.75C4.16945 0.75 0.25 4.27789 0.25 8.625C0.25 15.625 9 25.25 9 25.25C9 25.25 17.75 15.625 17.75 8.625C17.75 4.27789 13.8305 0.75 9 0.75ZM9 13C8.30777 13 7.63108 12.7947 7.0555 12.4101C6.47993 12.0256 6.03133 11.4789 5.76642 10.8394C5.50151 10.1999 5.4322 9.49612 5.56725 8.81718C5.7023 8.13825 6.03564 7.51461 6.52513 7.02513C7.01461 6.53564 7.63825 6.2023 8.31718 6.06725C8.99612 5.9322 9.69985 6.00151 10.3394 6.26642C10.9789 6.53133 11.5256 6.97993 11.9101 7.5555C12.2947 8.13108 12.5 8.80777 12.5 9.5C12.499 10.4279 12.1299 11.3176 11.4738 11.9738C10.8176 12.6299 9.92795 12.999 9 13Z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <p class="fm-serif tw fs-20">
+                                台中市大雅區神林南路21巷65號
+                            </p>
+                        </li>
+                        <li class="d-flex align-center justify-start">
+                            <svg
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.74023 0.458374H8.1164C8.29438 0.458374 8.46813 0.512648 8.61446 0.613956C8.76079 0.715263 8.87275 0.858786 8.9354 1.02537L10.6341 5.54037C10.6901 5.68968 10.7042 5.85146 10.6749 6.00821L9.82323 10.5722C10.8697 13.0315 12.5976 14.6847 15.4617 16.1675L19.9709 15.2925C20.1311 15.2617 20.2968 15.2762 20.4492 15.3345L24.9782 17.0612C25.1438 17.1243 25.2863 17.2361 25.3869 17.3819C25.4876 17.5278 25.5415 17.7007 25.5417 17.8779V22.0592C25.5417 23.9562 23.8711 25.495 21.9157 25.0692C18.3539 24.2945 11.7541 22.324 7.13173 17.7017C2.70307 13.2742 1.21907 7.15854 0.720899 3.85337C0.435066 1.96571 1.94823 0.458374 3.74023 0.458374Z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <p class="fm-serif tw fs-20">
+                                04-25601260 / 0960962622
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul class="">
+                        <li>
+                            <a
+                                href="./about-us.html"
+                                class="fm-serif tw fs-20 fw-700"
+                            >
+                                關於我們
+                            </a>
+                        </li>
+                        <li class="fm-serif tw fs-20 fw-700">
+                            服務項目
+                            <ul class="fm-serif tw fs-20">
+                                <li class="">
+                                    <a
+                                        href="./service-1.html"
+                                        class="fm-serif tw fs-14 fw-700"
+                                        >智能代購平台</a
+                                    >
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="./service-2.html"
+                                        class="fm-serif tw fs-14 fw-700"
+                                        >AI優化生產線</a
+                                    >
+                                </li>
+                                <li class="">
+                                    <a
+                                        href="./service-3.html"
+                                        class="fm-serif tw fs-14 fw-700"
+                                        >AI門禁辨識系統</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a
+                                href="./technology.html"
+                                class="fm-serif tw fs-20 fw-700"
+                            >
+                                技術與創新
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="./contact.html"
+                                class="fm-serif tw fs-20 fw-700"
+                            >
+                                聯絡我們
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-        </section>
-    </main>
-    <footer class="bg-dg d-flex flex-column align-center justify-center">
-        <section id="ft-section-1">
-            <div>
-                <a href="index.html">
-                    <img src="./asset/image/logo.png" alt="logo">
-                </a>
-                <ul class="">
-                    <li class="d-flex align-center justify-start">
-                        <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9 0.75C4.16945 0.75 0.25 4.27789 0.25 8.625C0.25 15.625 9 25.25 9 25.25C9 25.25 17.75 15.625 17.75 8.625C17.75 4.27789 13.8305 0.75 9 0.75ZM9 13C8.30777 13 7.63108 12.7947 7.0555 12.4101C6.47993 12.0256 6.03133 11.4789 5.76642 10.8394C5.50151 10.1999 5.4322 9.49612 5.56725 8.81718C5.7023 8.13825 6.03564 7.51461 6.52513 7.02513C7.01461 6.53564 7.63825 6.2023 8.31718 6.06725C8.99612 5.9322 9.69985 6.00151 10.3394 6.26642C10.9789 6.53133 11.5256 6.97993 11.9101 7.5555C12.2947 8.13108 12.5 8.80777 12.5 9.5C12.499 10.4279 12.1299 11.3176 11.4738 11.9738C10.8176 12.6299 9.92795 12.999 9 13Z"
-                                fill="white" />
-                        </svg>
-                        <p class="fm-serif tw fs-20">臺北市大安區忠孝東路4段148號6樓</p>
-                    </li>
-                    <li class="d-flex align-center justify-start">
-                        <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9 0.75C4.16945 0.75 0.25 4.27789 0.25 8.625C0.25 15.625 9 25.25 9 25.25C9 25.25 17.75 15.625 17.75 8.625C17.75 4.27789 13.8305 0.75 9 0.75ZM9 13C8.30777 13 7.63108 12.7947 7.0555 12.4101C6.47993 12.0256 6.03133 11.4789 5.76642 10.8394C5.50151 10.1999 5.4322 9.49612 5.56725 8.81718C5.7023 8.13825 6.03564 7.51461 6.52513 7.02513C7.01461 6.53564 7.63825 6.2023 8.31718 6.06725C8.99612 5.9322 9.69985 6.00151 10.3394 6.26642C10.9789 6.53133 11.5256 6.97993 11.9101 7.5555C12.2947 8.13108 12.5 8.80777 12.5 9.5C12.499 10.4279 12.1299 11.3176 11.4738 11.9738C10.8176 12.6299 9.92795 12.999 9 13Z"
-                                fill="white" />
-                        </svg>
-                        <p class="fm-serif tw fs-20">台中市大雅區神林南路21巷65號</p>
-                    </li>
-                    <li class="d-flex align-center justify-start">
-                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3.74023 0.458374H8.1164C8.29438 0.458374 8.46813 0.512648 8.61446 0.613956C8.76079 0.715263 8.87275 0.858786 8.9354 1.02537L10.6341 5.54037C10.6901 5.68968 10.7042 5.85146 10.6749 6.00821L9.82323 10.5722C10.8697 13.0315 12.5976 14.6847 15.4617 16.1675L19.9709 15.2925C20.1311 15.2617 20.2968 15.2762 20.4492 15.3345L24.9782 17.0612C25.1438 17.1243 25.2863 17.2361 25.3869 17.3819C25.4876 17.5278 25.5415 17.7007 25.5417 17.8779V22.0592C25.5417 23.9562 23.8711 25.495 21.9157 25.0692C18.3539 24.2945 11.7541 22.324 7.13173 17.7017C2.70307 13.2742 1.21907 7.15854 0.720899 3.85337C0.435066 1.96571 1.94823 0.458374 3.74023 0.458374Z"
-                                fill="white" />
-                        </svg>
-                        <p class="fm-serif tw fs-20">04-25601260 / 0960962622</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="">
-                <ul class="">
-                    <li>
-                        <a href="./about-us.html" class="fm-serif tw fs-20 fw-700">
-                            關於我們
-                        </a>
-                    </li>
-                    <li class="fm-serif tw fs-20 fw-700">
-                        服務項目
-                        <ul class="fm-serif tw fs-20">
-                            <li class="">
-                                <a href="./service-1.html" class="fm-serif tw fs-14 fw-700">智能代購平台</a>
-                            </li>
-                            <li class="">
-                                <a href="./service-2.html" class="fm-serif tw fs-14 fw-700">AI優化生產線</a>
-                            </li>
-                            <li class="">
-                                <a href="./service-3.html" class="fm-serif tw fs-14 fw-700">AI門禁辨識系統</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./technology.html" class="fm-serif tw fs-20 fw-700">
-                            技術與創新
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contact.html" class="fm-serif tw fs-20 fw-700">
-                            聯絡我們
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section id="ft-section-2">
-            <p class="fm-serif fs-20 tw fw-400">
-                Copyright &copy; 2025 宮璇股份有限公司
-            </p>
-        </section>
-    </footer>
-    <a href="#top" id="go-top">↖</a>
-    <script src="./asset/jquery.min.js"></script>
-</body>
-
+            <section id="ft-section-2">
+                <p class="fm-serif fs-20 tw fw-400">
+                    Copyright &copy; 2025 宮璇股份有限公司
+                </p>
+            </section>
+        </footer>
+        <a href="#top" id="go-top">↖</a>
+        <script src="./asset/jquery.min.js"></script>
+    </body>
 </html>
