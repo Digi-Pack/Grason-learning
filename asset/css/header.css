@@ -200,6 +200,10 @@ input[type="checkbox"] {
         transition: padding-bottom 0.3s ease;
     }
 
+    /* #hd-menu-2-control {
+        transition: height 0.3s ease-in-out;
+    } */
+
     #hd-menu-1 #hd-menu-2-check:checked~li:nth-child(3) #hd-menu-2-control {
         /* padding-bottom: 132px; */
         display: flex;
