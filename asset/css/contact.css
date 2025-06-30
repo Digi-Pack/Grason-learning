@@ -8,7 +8,8 @@
 
 #contact-info>div>p:nth-child(1) {
     min-width: 196px;
-    padding-right: 100px;
+    /* padding-right: 100px; */
+    margin-right: 100px;
 }
 
 #contact-info>div:nth-child(9)>div {
@@ -53,7 +54,8 @@
 
     #contact-info>div>p:nth-child(1) {
         min-width: 110px;
-        padding-right: 16px;
+        /* padding-right: 16px; */
+        margin-right: 16px;
     }
 
     #contact-info>div {
