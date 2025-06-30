@@ -26,11 +26,13 @@ input[type="checkbox"] {
     height: 32px;
     width: 32px;
     display: none;
+    cursor: pointer;
 }
 
 #hd-menu-1-control div {
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 #hd-menu-1-control div:nth-child(1) {
@@ -39,6 +41,22 @@ input[type="checkbox"] {
 
 #hd-menu-1-control div:nth-child(2) {
     width: 80%
+}
+
+#hd-menu-1-control div:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+#hd-menu-1-check:checked+#hd-menu-1-control div {
+    width: 100%;
+}
+
+#hd-menu-1-check:checked+#hd-menu-1-control div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hd-menu-1-check:checked+#hd-menu-1-control div:nth-child(2) {
+    transform: rotate(-45deg);
 }
 
 #hd-menu-1 {
@@ -79,18 +97,21 @@ input[type="checkbox"] {
     height: 40px;
     width: 40px;
     transition: all 0.3s ease-in-out;
+    padding-top: 8px;
 }
 
 #hd-menu-2-check:checked~li #hd-menu-2-control div {
     transform: rotate(180deg);
+    padding-top: 3px;
 }
 
 #hd-menu-2-control div span {
-    height: 22px;
-    width: 22px;
+    height: 18px;
+    width: 18px;
     border: 3px solid white;
     border-bottom: none;
     border-right: none;
+    border-radius: 2px;
     transform: rotate(-135deg);
 }
 
@@ -116,9 +137,10 @@ input[type="checkbox"] {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     #hd {
         background-color: #222222;
+        padding: 12px 20px;
         /* position: relative; */
     }
 
@@ -154,6 +176,11 @@ input[type="checkbox"] {
         display: flex;
     }
 
+    #hd-menu-2-check:checked~li #hd-menu-2-control div {
+        transform: rotate(180deg);
+        padding-top: 10px;
+    }
+
     #hd-menu-1>li:hover::after {
         content: "";
         position: absolute;
@@ -167,16 +194,24 @@ input[type="checkbox"] {
     #hd-menu-1 li:nth-child(3) {
         position: relative;
     }
-    #hd-menu-2-control{
+
+    #hd-menu-2-control {
         overflow: hidden;
         transition: padding-bottom 0.3s ease;
     }
+
     #hd-menu-1 #hd-menu-2-check:checked~li:nth-child(3) #hd-menu-2-control {
-        padding-bottom: 132px;
+        /* padding-bottom: 132px; */
+        display: flex;
+        align-items: start;
+        justify-self: space-between;
+        height: 162px;
     }
-    #hd-menu-1 #hd-menu-2-check:checked~li:nth-child(3) #hd-menu-2{
+
+    #hd-menu-1 #hd-menu-2-check:checked~li:nth-child(3) #hd-menu-2 {
         opacity: 1;
     }
+
     #hd-section {
         width: 100%;
         display: flex;
@@ -206,7 +241,7 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (min-width: 800px) and (max-width: 1200px) {
+@media screen and (min-width: 950px) and (max-width: 1200px) {
     #hd-menu-1 {
         gap: 40px;
     }
