@@ -4,287 +4,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/css/v1/all.css">
-    <link rel="stylesheet" href="./asset/css/v1/icon.css">
-    <link rel="stylesheet" href="./asset/css/v1/header.css">
-    <link rel="stylesheet" href="./asset/css/v1/footer.css">
-    <link rel="stylesheet" href="./asset/css/v1/index.css">
-
-    <title>宮璇-形象網站-主頁</title>
+    <link rel="stylesheet" href="./asset/css/all.css">
+    <link rel="stylesheet" href="./asset/css/font.css">
+    <link rel="stylesheet" href="./asset/css/header.css">
+    <link rel="stylesheet" href="./asset/css/footer.css">
+    <link rel="stylesheet" href="./asset/css/section.css">
+    <link rel="stylesheet" href="./asset/css/card.css">
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <title>宮璇-形象網站-首頁</title>
 </head>
-<style>
-    .contact-content {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .contact-content-info {
-        display: flex;
-        align-items: center;
-        padding: 30px 0;
-    }
-
-    .contact-content-info h4 {
-        width: 70px;
-    }
-
-    .contact-content-info p {
-        margin-left: 70px;
-        letter-spacing: 0.2em;
-    }
-
-    .addresses {
-        width: 100%;
-    }
-
-    .address {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .map-button {
-        border: 1.5px solid rgb(0, 0, 97);
-        border-radius: 15px;
-        background-color: transparent;
-        letter-spacing: 0.2em;
-        padding: 5px 10px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .map-button:hover {
-        background-color: rgb(0, 0, 97);
-        color: white;
-    }
-</style>
 
 <body>
-    <header>
-        <div id="header-logo-link">
+    <header id="hd" class="d-flex align-center justify-between">
+        <section id="hd-section">
             <a href="./index.html">
-                <img src="./asset/image/logo.png" alt="logo" class="header-logo">
+                <img src="./asset/image/logo.png" alt="logo">
             </a>
-            <input type="checkbox" name="hamburagr-1" id="hamburagr-1">
-            <label for="hamburagr-1" id="hamburagr-1-label">
+            <input type="checkbox" id="hd-menu-1-check">
+            <label for="hd-menu-1-check" id="hd-menu-1-control" class="d-flex flex-column align-end justify-around">
                 <div></div>
                 <div></div>
             </label>
-        </div>
-        <ul class="header-layer1">
-            <li class="header-layer1-li">
-                <a class="white-title " href="./about-us.html">
-                    <h4 class="nav-button">關於我們</h4>
+        </section>
+        <ul id="hd-menu-1" class="d-flex align-center justify-between">
+            <input type="checkbox" id="hd-menu-2-check">
+            <li>
+                <a href="./about-us.html" class="fm-serif tw fs-20">
+                    關於我們
                 </a>
             </li>
-            <li class="dropdown header-layer1-li">
-                <input type="checkbox" name="hamburagr-2" id="hamburagr-2">
-                <label for="hamburagr-2" class="white-title hamburagr-2-label nav-button">
-                    <h4>服務項目</h4>
-                    <div class="hamburagr-2-box"></div>
+            <li>
+                <label for="hd-menu-2-check" id="hd-menu-2-control"
+                    class="fm-serif tw fs-20 d-flex align-center justify-between">
+                    服務項目
+                    <div class="d-flex align-start justify-center">
+                        <span></span>
+                    </div>
                 </label>
-                <ul class="header-layer2">
-                    <li>
-                        <a class="white-small-title" href="./service-1.html">
-                            <h6>智能代購平台</h6>
+                <ul id="hd-menu-2" class="flex-column">
+                    <li class="bg-dg">
+                        <a href="./service-1.html" class="fm-serif tw fs-20 fw-300">
+                            智能代購平台
                         </a>
                     </li>
-                    <li>
-                        <a class="white-small-title" href="./service-2.html">
-                            <h6>AI優化生產線</h6>
+                    <li class="bg-dg">
+                        <a href="./service-2.html" class="tw fm-serif tw fs-20 fw-300">
+                            AI優化生產線
                         </a>
                     </li>
-                    <li>
-                        <a class="white-small-title" href="./service-3.html">
-                            <h6>AI門禁辨識系統</h6>
+                    <li class="bg-dg">
+                        <a href="./service-3.html" class="fm-serif tw fs-20 fw-300">
+                            AI門禁辨識系統
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="header-layer1-li">
-                <a class="white-title" href="./technology.html">
-                    <h4 class="nav-button">技術與創新</h4>
+            <li>
+                <a href="./technology.html" class="fm-serif tw fs-20">
+                    技術與創新
                 </a>
             </li>
-            <li class="header-layer1-li">
-                <a class="white-title" href="./contact.html">
-                    <h4 class="nav-button">聯絡我們</h4>
+            <li>
+                <a href="./contact.html" class="fm-serif tw fs-20">
+                    聯絡我們
                 </a>
             </li>
         </ul>
     </header>
-    <main>
-        <div id="top" style="height: var(--header-height);"></div>
-        <section class="black-section" id="about" style="background-color: var(--back-color);position: relative;">
-            <div class="main-container">
-                <div class="container-content">
-                    <div>
-                        <p class="decorate index-main-decorate-1 ">Our Policy</p>
-                        <h1 class="index-ch-title-white title" style="--font-weight:bolder;--font-size:100px;">
-                            數據驅動，智能協同
-                        </h1>
-                        <p class="decorate index-main-decorate-2 slogan2">技術x場景x數據</p>
-                    </div>
-                    <p class="index-ch-title-white slogan" style="--font-size:20px;--font-weight:400;margin-top: 80px;">
-                        以人工智慧技術為核心，
-                        <br>
-                        結合消費端代購服務與產業端智慧解決方案。
-                    </p>
+
+    <main id="top">
+        <section class="container bg-dgb">
+            <section id="m-section-1" class="child-container">
+                <div class="slogan container-content">
+                    <p class="fm-sans fw-100 fs-32 tb-1">Our Policy</p>
+                    <h1 class="fm-serif fw-900 fs-100 tw">
+                        <strong>數據驅動，智能協同</strong>
+                    </h1>
+                    <p class="fm-sans fw-100 fs-60 tb-1">技術x場景x數據</p>
                 </div>
+                <p class="fm-serif fw-400 fs-20 tw">
+                    以人工智慧技術為核心，
+                    <br>
+                    結合消費端代購服務與產業端智慧解決方案。
+                </p>
 
+            </section>
+            <div class="container-image">
+                <img src="./asset/image/Freepik/system-administrator-using-laptop-data-center-updating-ai-systems.jpg"
+                    alt="main image">
             </div>
-            <img src="./asset/image/Freepik/system-administrator-using-laptop-data-center-updating-ai-systems.jpg"
-                class="main-image" style="" alt="">
         </section>
-        <section class="black-section" id="about" style="background-color: var(--back-color);">
-            <div class="container">
-                <span class="index-en-title-blue-2 decorate" style="--font-size:140px;">ABOUT</span>
+        <section class="container bg-dgb " id="about-container">
+            <img src="./asset/image/symbol.png" class="decorate-image" alt="decorate image">
+            <div id="m-section-2" class="child-container">
+                <span class="t-stroke-b-1-1 fm-sans decorate-text fs-140"><strong>ABOUT</strong></span>
 
                 <div class="container-content">
-                    <h1 class="index-ch-title-white title" style="--font-size:80px;">
+                    <h1 class="fm-serif tw fs-80 fw-500">
                         洞察數據
                         <br>
                         驅動未來產業升級
                     </h1>
-                    <article class="index-ch-title-white content"
-                        style="--font-size:20px;--font-weight:400;max-width: 100%;">
+                    <article class="fm-serif tw fs-20 fw-400">
                         我們運用AI解析消費數據，提供企業精準決策依據，從市場預測到營運優化，助力產業高效轉型。
+                        <br>
                         結合數據科學與產業經驗，讓每一筆數據都成為驅動創新的力量。
                     </article>
-                    <div class="about-card-container">
+                    <div class="container-images">
                         <img src="./asset/image/Freepik/computer-scientist-using-laptop-data-center-updating-ai 1.png"
-                            alt="show image for about 1">
+                            alt="show image for about 1" class="container-image">
                         <img src="./asset/image/Freepik/robotic-arms-modern-factory-setting.png"
-                            alt="show image for about 2">
+                            alt="show image for about 2" class="container-image">
                         <img src="./asset/image/Freepik/cropped-hand-using-mobile-phone.png"
-                            alt="show image for about 3">
+                            alt="show image for about 3" class="container-image">
                     </div>
                 </div>
-            </div>
-            <img src="./asset/image/symbol.png" class="image" style="width: 600px;" alt="">
-        </section>
 
-        <section class="white-section">
-            <div class="container">
-                <span class="index-en-title-blue-1 decorate" style="--font-size:140px;">Service</span>
+            </div>
+        </section>
+        <section class="container">
+            <div id="m-section-3" class="child-container">
+                <span class="t-stroke-b-2-1 fm-sans decorate-text fs-140"><strong>SERVICE</strong></span>
+
                 <div class="container-content">
-                    <h1 class="index-ch-title-black title" style="--font-size:80px;">核心業務體系</h1>
-                    <article class="index-ch-title-black content" style="--font-size:20px;--font-weight:400;">
+                    <h1 class="fm-serif fs-80 fw-500">
+                        核心業務體系
+                    </h1>
+                    <article class="fm-serif fs-20 fw-400">
                         我們致力於透過AI技術解析消費行為數據，為企業提供精準決策依據。從市場趨勢預測、客群輪廓分析，到智慧產品優化與營運策略制定，協助產業在數位浪潮中穩健轉型、創造高效價值。
                     </article>
                 </div>
-                <div class="service-card-container">
-                    <div class="service-card-container-left">
-                        <img src="./asset/image/icon/Ellipse 1.png" alt="Ellipse" style="width: 100%;">
-                        <input type="checkbox" class="service-checkbox" id="service1-checkbox1" checked>
-                        <label for="service1-checkbox1" class="service-label service-label1 active">智能代購平台</label>
-                        <input type="checkbox" class="service-checkbox" id="service2-checkbox2">
-                        <label for="service2-checkbox2" class="service-label service-label2">AI優化生產線</label>
-                        <input type="checkbox" class="service-checkbox" id="service3-checkbox3">
-                        <label for="service3-checkbox3" class="service-label service-label3">AI門禁辨識系統</label>
+                <div id="service-container">
+                    <div class="left">
+                        <div>
+                            <img src="./asset/image/icon/oval.png" alt="decorate image">
+                            <input type="radio" class="service-checkbox" id="service1-checkbox1"
+                                name="service-selection" data-target="service1" checked style="display: none;">
+                            <label for="service1-checkbox1" class="service-label service-label1 active"
+                                data-target="service1">智能代購平台</label>
+                            <input type="radio" class="service-checkbox" id="service2-checkbox2"
+                                name="service-selection" data-target="service2" style="display: none;">
+                            <label for="service2-checkbox2" class="service-label service-label2"
+                                data-target="service2">AI優化生產線</label>
+                            <input type="radio" class="service-checkbox" id="service3-checkbox3"
+                                name="service-selection" data-target="service3" style="display: none;">
+                            <label for="service3-checkbox3" class="service-label service-label3"
+                                data-target="service3">AI門禁辨識系統</label>
+                        </div>
                     </div>
-                    <div class="service-card-container-right">
-                        <div class="card">
-                            <div class="card-title">
+                    <div class="right card-type-4-container">
+                        <div class="card-type-4" data-service="service1">
+                            <div class="start-icon d-flex align-center justify-start">
                                 <svg width="50" height="50" viewBox="0 0 100 100">
                                     <polygon points="50,0 55,45 100,50 55,55 50,100 45,55 0,50 45,45" fill="#293ECD" />
                                 </svg>
-                                <h3 class="index-ch-title-black m-2" style="--font-size:40px;font-weight: 700;">智能代購平台
+                                <h3 class="fm-serif fw-700 fs-40">智能代購平台
                                 </h3>
                             </div>
-                            <p class="index-ch-title-black" style="--font-size:18px;font-weight: 400;margin-top: 32px;">
+                            <p class="fm-serif fw-400 fs-18"
+                                style="--font-size:18px;font-weight: 400;margin-top: 32px;">
                                 面向25-45歲女性消費者，提供AI選品、區塊鏈溯源、AR試穿與自動化報關服務，整合AI與會員分級體驗，並結合KOL導購與短影音行銷，有效強化消費者互動與數據積累。
                             </p>
                             <div class="card-footer">
-                                <a class="index-ch-title-blue-1" style="--font-size:20px;font-weight: 700;">查看更多</a>
+                                <a class="fm-serif fw-700 fs-20">查看更多</a>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-title">
+                        <div class="card-type-4" data-service="service2">
+                            <div class="start-icon d-flex align-center justify-start">
                                 <svg width="50" height="50" viewBox="0 0 100 100">
                                     <polygon points="50,0 55,45 100,50 55,55 50,100 45,55 0,50 45,45" fill="#293ECD" />
                                 </svg>
-                                <h3 class="index-ch-title-black m-2" style="--font-size:40px;font-weight: 700;">AI優化生產線
+                                <h3 class="fm-serif fw-700 fs-40">AI優化生產線
                                 </h3>
                             </div>
-                            <p class="index-ch-title-black" style="--font-size:18px;font-weight: 400;margin-top: 32px;">
+                            <p class="fm-serif fw-400 fs-18"
+                                style="--font-size:18px;font-weight: 400;margin-top: 32px;">
                                 為製造業提供數位孿生、動態排產與AI品質檢測等解決方案，適用於化工與紡織產業，以提升生產效率與品質。採訂閱制合作模式，提供一體化「設備上雲＋智慧質檢」服務。
                             </p>
                             <div class="card-footer">
-                                <a class="index-ch-title-blue-1" style="--font-size:20px;font-weight: 700;">查看更多</a>
+                                <a class="fm-serif fw-700 fs-20">查看更多</a>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-title">
+                        <div class="card-type-4" data-service="service3">
+                            <div class="start-icon d-flex align-center justify-start">
                                 <svg width="50" height="50" viewBox="0 0 100 100">
                                     <polygon points="50,0 55,45 100,50 55,55 50,100 45,55 0,50 45,45" fill="#293ECD" />
                                 </svg>
-                                <h3 class="index-ch-title-black m-2" style="--font-size:40px;font-weight: 700;">AI門禁辨識系統
+                                <h3 class="fm-serif fw-700 fs-40">AI門禁辨識系統
                                 </h3>
                             </div>
-                            <p class="index-ch-title-black" style="--font-size:18px;font-weight: 400;margin-top: 32px;">
+                            <p class="fm-serif fw-400 fs-18"
+                                style="--font-size:18px;font-weight: 400;margin-top: 32px;">
                                 面向25-結合人臉、聲紋與步態等多模態辨識技術，搭配行為預警與隱私保護機制，應用於工業園區、高端倉儲等場域，提升安防效率與合規性。
                             </p>
                             <div class="card-footer">
-                                <a class="index-ch-title-blue-1" style="--font-size:20px;font-weight: 700;">查看更多</a>
+                                <a class="fm-serif fw-700 fs-20">查看更多</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="black-section" style="background-color: var(--back-color);">
-            <div class="container">
-                <span class="index-en-title-blue-2 decorate" style="--font-size:140px;">NEWS</span>
+        <section class="container bg-dgb">
+            <div id="m-section-3" class="child-container">
+                <span class="t-stroke-b-1-1 fm-sans decorate-text fs-140"><strong>NEWS</strong></span>
 
                 <div class="container-content">
-                    <h1 class="index-ch-title-white title" style="--font-size:80px;">最新消息</h1>
-                    <div id="news">
-                        <div class="news-container">
-                            <p class="date index-ch-title-blue-2" style="--font-weight:400;--font-size:20px;">2025.06.20
-                            </p>
-                            <p class="news-content index-ch-title-white"
-                                style="--font-weight:400;--font-size:20px;margin-top:20px">
-                                宮璇推出《智能選品》模組，導入深度學習技術強化跨境美妝熱度預測模型。
-                            </p>
-                        </div>
-                        <div class="news-container">
-                            <p class="date index-ch-title-blue-2" style="--font-weight:400;--font-size:20px;">2025.05.10
-                            </p>
-                            <p class="news-content index-ch-title-white"
-                                style="--font-weight:400;--font-size:20px;margin-top:20px">
-                                宮璇與日商○○物流達成戰略合作，導入AI預測性排程系統，實現倉儲即時協同。
-                            </p>
-                        </div>
-                        <div class="news-container">
-                            <p class="date index-ch-title-blue-2" style="--font-weight:400;--font-size:20px;">2025.03.20
-                            </p>
-                            <p class="news-content index-ch-title-white"
-                                style="--font-weight:400;--font-size:20px;margin-top:20px">
-                                宮璇推出《智能選品》模組，導入深度學習技術強化跨境美妝熱度預測模型。
-                            </p>
-                        </div>
+                    <h1 class="fm-serif fs-80 fw-500 tw">
+                        最新消息
+                    </h1>
+                    <div id="news-container">
+                        <ul>
+                            <li class="fm-serif fw-400 fs-20 tb-2">2025.06.20</li>
+                            <li class="fm-serif fw-400 fs-20 tw">宮璇推出《智能選品》模組，導入深度學習技術強化跨境美妝熱度預測模型。</li>
+                        </ul>
+                        <ul>
+                            <li class="fm-serif fw-400 fs-20 tb-2">2025.05.10</li>
+                            <li class="fm-serif fw-400 fs-20 tw">宮璇與日商○○物流達成戰略合作，導入AI預測性排程系統，實現倉儲即時協同。</li>
+                        </ul>
+                        <ul>
+                            <li class="fm-serif fw-400 fs-20 tb-2">2025.03.20</li>
+                            <li class="fm-serif fw-400 fs-20 tw">宮璇推出《智能選品》模組，導入深度學習技術強化跨境美妝熱度預測模型。</li>
+                        </ul>
                     </div>
                 </div>
+
             </div>
         </section>
-        <section class="white-section">
-            <div class="container">
-                <span class="index-en-title-blue-1 decorate" style="--font-size:140px;">USE CASES</span>
+        <section class="container">
+            <div id="m-section-2" class="child-container">
+                <span class="t-stroke-b-1-1 fm-sans decorate-text fs-140"><strong>USE CASES</strong></span>
+
                 <div class="container-content">
-                    <h1 class="index-ch-title-black title" style="--font-size:80px;">應用案例</h1>
+                    <h1 class="fm-serif fs-80 fw-500">
+                        應用案例
+                    </h1>
                 </div>
-                <div class="use-case-card-container">
-                    <div class="card">
+                <div class="card-type-5-container">
+                    <div class="card-type-5">
                         <img src="./asset/image/Freepik/entrepreneur-showcasing-clothes-online-store.jpg" alt="1"
-                            class="card-img">
+                            class="card-type-5-main-image">
                         <div class="card-body">
-                            <h4 class="card-title index-ch-title-black" style="--font-size:32px;--font-weight:700px">
+                            <h4 class="fm-serif fs-32 fw-700" style="--font-size:32px;--font-weight:700px">
                                 內容行銷導購</h4>
-                            <p class="card-content index-ch-title-black" style="--font-size:20px;--font-weight:400">
+                            <p class="fm-serif fs-20 fw-400" style="--font-size:20px;--font-weight:400">
                                 宮璇攜手網紅經紀公司與短影音平台，透過評測導購精準引流至代購平台。
                             </p>
-                            <div class="card-footer">
+                            <div class="card-footer d-flex align-center justify-end">
                                 <a href="./service-1.html" class="btn-look">
                                     <img src="./asset/image/icon/vector1.png" alt="arrow vector">
                                     <img src="./asset/image/icon/vector2.png" alt="arrow vector">
@@ -292,34 +258,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card-type-5">
                         <img src="./asset/image/Freepik/male-asian-caucasian-engineer-professional-having-discussion-standing-consult-machine-factory-two-expert-coworker-brainstorm-explaining-solves-process-cnc-operate-machine.jpg"
-                            alt="2" class="card-img">
+                            alt="1" class="card-type-5-main-image">
                         <div class="card-body">
-                            <h4 class="card-title index-ch-title-black" style="--font-size:32px;--font-weight:700px">
-                                化工製造業</h4>
-                            <p class="card-content index-ch-title-black" style="--font-size:20px;--font-weight:400">
+                            <h4 class="fm-serif fs-32 fw-700" style="--font-size:32px;--font-weight:700px">
+                                化工製造業
+                            </h4>
+                            <p class="fm-serif fs-20 fw-400" style="--font-size:20px;--font-weight:400">
                                 我們協助精密化學與材料產業導入演算法，自動優化合成參數，提升效率與良率，降低人工調整風險。
                             </p>
-                            <div class="card-footer">
-                                <a href="./service-2.html" class="btn-look">
+                            <div class="card-footer d-flex align-center justify-end">
+                                <a href="./service-1.html" class="btn-look">
                                     <img src="./asset/image/icon/vector1.png" alt="arrow vector">
                                     <img src="./asset/image/icon/vector2.png" alt="arrow vector">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card-type-5">
                         <img src="./asset/image/Freepik/computer-solar-panels-manufacturing-plant-troubleshooting-technical-issues.jpg"
-                            alt="3" class="card-img">
+                            alt="1" class="card-type-5-main-image">
                         <div class="card-body">
-                            <h4 class="card-title index-ch-title-black" style="--font-size:32px;--font-weight:700px">
+                            <h4 class="fm-serif fs-32 fw-700" style="--font-size:32px;--font-weight:700px">
                                 高端倉儲物流中心</h4>
-                            <p class="card-content index-ch-title-black" style="--font-size:20px;--font-weight:400">
+                            <p class="fm-serif fs-20 fw-400" style="--font-size:20px;--font-weight:400">
                                 專為高價值商品設計的 VIP 管理方案，刷臉入倉並紀錄存取行為，有效降低風險，提升物流控管與信任度。
                             </p>
-                            <div class="card-footer">
-                                <a href="./service-3.html" class="btn-look">
+                            <div class="card-footer d-flex align-center justify-end">
+                                <a href="./service-1.html" class="btn-look">
                                     <img src="./asset/image/icon/vector1.png" alt="arrow vector">
                                     <img src="./asset/image/icon/vector2.png" alt="arrow vector">
                                 </a>
@@ -327,8 +294,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+        </section>
+        <section class="run-group-father-container">
             <div class="w-100 run-group-container mt-5 mb-5">
 
                 <div class="run-group">
@@ -358,69 +326,116 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section class="footer-upper">
-            <div class="footer-contact">
+    <footer class="bg-dg d-flex flex-column align-center justify-center">
+        <section id="ft-section-1">
+            <div>
                 <a href="index.html">
                     <img src="./asset/image/logo.png" alt="logo">
                 </a>
-                <ul class="footer-contact-list">
-                    <li class="white-small-title" style="font-weight:lighter">臺北市大安區忠孝東路4段148號6樓</li>
-                    <li class="white-small-title" style="font-weight:lighter">台中市大雅區神林南路21巷65號</li>
-                    <li class="white-small-title" style="font-weight:lighter">04-25601260 / 0960962622</li>
+                <ul class="">
+                    <li class="d-flex align-center justify-start">
+                        <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 0.75C4.16945 0.75 0.25 4.27789 0.25 8.625C0.25 15.625 9 25.25 9 25.25C9 25.25 17.75 15.625 17.75 8.625C17.75 4.27789 13.8305 0.75 9 0.75ZM9 13C8.30777 13 7.63108 12.7947 7.0555 12.4101C6.47993 12.0256 6.03133 11.4789 5.76642 10.8394C5.50151 10.1999 5.4322 9.49612 5.56725 8.81718C5.7023 8.13825 6.03564 7.51461 6.52513 7.02513C7.01461 6.53564 7.63825 6.2023 8.31718 6.06725C8.99612 5.9322 9.69985 6.00151 10.3394 6.26642C10.9789 6.53133 11.5256 6.97993 11.9101 7.5555C12.2947 8.13108 12.5 8.80777 12.5 9.5C12.499 10.4279 12.1299 11.3176 11.4738 11.9738C10.8176 12.6299 9.92795 12.999 9 13Z"
+                                fill="white" />
+                        </svg>
+                        <p class="fm-serif tw fs-20">臺北市大安區忠孝東路4段148號6樓</p>
+                    </li>
+                    <li class="d-flex align-center justify-start">
+                        <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 0.75C4.16945 0.75 0.25 4.27789 0.25 8.625C0.25 15.625 9 25.25 9 25.25C9 25.25 17.75 15.625 17.75 8.625C17.75 4.27789 13.8305 0.75 9 0.75ZM9 13C8.30777 13 7.63108 12.7947 7.0555 12.4101C6.47993 12.0256 6.03133 11.4789 5.76642 10.8394C5.50151 10.1999 5.4322 9.49612 5.56725 8.81718C5.7023 8.13825 6.03564 7.51461 6.52513 7.02513C7.01461 6.53564 7.63825 6.2023 8.31718 6.06725C8.99612 5.9322 9.69985 6.00151 10.3394 6.26642C10.9789 6.53133 11.5256 6.97993 11.9101 7.5555C12.2947 8.13108 12.5 8.80777 12.5 9.5C12.499 10.4279 12.1299 11.3176 11.4738 11.9738C10.8176 12.6299 9.92795 12.999 9 13Z"
+                                fill="white" />
+                        </svg>
+                        <p class="fm-serif tw fs-20">台中市大雅區神林南路21巷65號</p>
+                    </li>
+                    <li class="d-flex align-center justify-start">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.74023 0.458374H8.1164C8.29438 0.458374 8.46813 0.512648 8.61446 0.613956C8.76079 0.715263 8.87275 0.858786 8.9354 1.02537L10.6341 5.54037C10.6901 5.68968 10.7042 5.85146 10.6749 6.00821L9.82323 10.5722C10.8697 13.0315 12.5976 14.6847 15.4617 16.1675L19.9709 15.2925C20.1311 15.2617 20.2968 15.2762 20.4492 15.3345L24.9782 17.0612C25.1438 17.1243 25.2863 17.2361 25.3869 17.3819C25.4876 17.5278 25.5415 17.7007 25.5417 17.8779V22.0592C25.5417 23.9562 23.8711 25.495 21.9157 25.0692C18.3539 24.2945 11.7541 22.324 7.13173 17.7017C2.70307 13.2742 1.21907 7.15854 0.720899 3.85337C0.435066 1.96571 1.94823 0.458374 3.74023 0.458374Z"
+                                fill="white" />
+                        </svg>
+                        <p class="fm-serif tw fs-20">04-25601260 / 0960962622</p>
+                    </li>
                 </ul>
             </div>
-            <div class="footer-map">
-                <ul class="footer-layer1">
+            <div class="">
+                <ul class="">
                     <li>
-                        <a href="">
-                            <h5 class="white-title">關於我們</h5>
+                        <a href="./about-us.html" class="fm-serif tw fs-20 fw-700">
+                            關於我們
                         </a>
                     </li>
-                    <li>
-                        <h5 class="white-title">服務項目</h5>
-                        <ul class="footer-layer2">
-                            <li>
-                                <a href="./service-1.html" class="white-title">智能代購平台</a>
+                    <li class="fm-serif tw fs-20 fw-700">
+                        服務項目
+                        <ul class="fm-serif tw fs-20">
+                            <li class="">
+                                <a href="./service-1.html" class="fm-serif tw fs-14 fw-700">智能代購平台</a>
                             </li>
-                            <li>
-                                <a href="./service-1.html" class="white-title">AI優化生產線</a>
+                            <li class="">
+                                <a href="./service-2.html" class="fm-serif tw fs-14 fw-700">AI優化生產線</a>
                             </li>
-                            <li>
-                                <a href="./service-1.html" class="white-title">AI門禁辨識系統</a>
+                            <li class="">
+                                <a href="./service-3.html" class="fm-serif tw fs-14 fw-700">AI門禁辨識系統</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">
-                            <h5 class="white-title">技術與創新</h5>
+                        <a href="./technology.html" class="fm-serif tw fs-20 fw-700">
+                            技術與創新
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <h5 class="white-title">聯絡我們</h5>
+                        <a href="./contact.html" class="fm-serif tw fs-20 fw-700">
+                            聯絡我們
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="footer-down" style="padding-top: 50px;">
-            <h5 class="white-small-title" style="font-weight:500">
+        <section id="ft-section-2">
+            <p class="fm-serif fs-20 tw fw-400">
                 Copyright &copy; 2025 宮璇股份有限公司
-            </h5>
+            </p>
         </section>
     </footer>
     <a href="#top" id="go-top">↖</a>
-    <script src="./asset/jquery.min.js"></script>
+    <script src="./asset/js/jquery.min.js"></script>
 </body>
+
 <script>
     $(document).ready(function () {
-        $(".service-checkbox").on("change", function () {
-            $(".service-checkbox").prop("checked", false);
-            $(this).prop("checked", true);
+        function switchToService(serviceTarget) {
+            // 更新 label 狀態
             $(".service-label").removeClass("active");
-            $(this).next(".service-label").addClass("active");
+            $(`.service-label[data-target="${serviceTarget}"]`).addClass("active");
+
+            // 更新 radio 狀態
+            $(`.service-checkbox[data-target="${serviceTarget}"]`).prop("checked", true);
+
+            // 更新卡片狀態
+            var $cards = $(".card-type-4");
+            var $targetCard = $(`.card-type-4[data-service="${serviceTarget}"]`);
+            var $container = $cards.parent();
+
+            $cards.removeClass("active-card");
+            $targetCard.addClass("active-card");
+
+            $targetCard.prependTo($container);
+        }
+
+        // 點擊 label 觸發
+        $(".service-label").on("click", function (e) {
+            var serviceTarget = $(this).data("target");
+            switchToService(serviceTarget);
         });
+        $(".service-checkbox").on("change", function () {
+            if ($(this).is(":checked")) {
+                var serviceTarget = $(this).data("target");
+                switchToService(serviceTarget);
+            }
+        });
+        switchToService("service1");
     })
 </script>
 

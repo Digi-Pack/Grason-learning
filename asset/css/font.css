@@ -78,8 +78,20 @@
     font-size: 52px;
 }
 
+.fs-60 {
+    font-size: 60px;
+}
+
 .fs-80 {
     font-size: 80px;
+}
+
+.fs-100 {
+    font-size: 100px;
+}
+
+.fs-140 {
+    font-size: 140px;
 }
 
 .tw {
@@ -107,8 +119,18 @@
     color: transparent;
 }
 
+.t-stroke-b-1-1 {
+    -webkit-text-stroke: 1px #5AC9FB;
+    color: transparent;
+}
+
 .t-stroke-b-2 {
     -webkit-text-stroke: 2px #293ECD;
+    color: transparent;
+}
+
+.t-stroke-b-2-1 {
+    -webkit-text-stroke: 1px #293ECD;
     color: transparent;
 }
 

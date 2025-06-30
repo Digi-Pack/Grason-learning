@@ -149,11 +149,14 @@ a {
 /* .card img {
     width: 100%;
 } */
+.run-group-father-container {
+    width: 100%;
+}
 
 .run-group-container {
     position: relative;
     padding-top: 80px;
-    padding-bottom: 320px;
+    padding-bottom: 240px;
     height: 120px;
     width: 100%;
     overflow: hidden;
@@ -215,17 +218,48 @@ a {
 #go-top:hover {
     background-color: rgb(172, 172, 172);
 }
-.star-icon{
+
+.star-icon {
     height: 64px;
     margin-bottom: 60px;
 }
+
 .star-icon svg {
     height: 100%;
+    /* margin-right: 20px; */
 }
+
 @media screen and (max-width: 850px) {
     .star-icon {
         height: 32px;
         margin-bottom: 32px;
     }
-    
+
+    .star-icon svg {
+        width: 32px;
+        margin-right: 20px;
+    }
+
+    .run-group-container {
+        position: relative;
+        padding-top: 80px;
+        padding-bottom: 160px;
+        height: 60px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .run-group {
+        height: 60px;
+    }
+
+    .run-group img {
+        height: 100%;
+        width: 150px;
+        object-fit: contain;
+        object-position: center;
+        padding: 0 10px;
+    }
+
+
 }

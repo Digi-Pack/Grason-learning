@@ -31,23 +31,31 @@
 .main-Leaflet h1 {
     /* padding-bottom: 80px; */
 }
-.main-Leaflet>:nth-child(3){
+
+.main-Leaflet>:nth-child(3) {
     padding-top: 80px;
 }
-.main-Leaflet>:nth-child(4){
+
+.main-Leaflet>:nth-child(4) {
     padding-top: 80px;
 }
-.main-Leaflet>img{
+
+.main-Leaflet>img {
     width: 100%;
     height: 640px;
     object-fit: cover;
     object-position: center;
 }
 
+.main-Leaflet .slogan>h3 {
+    padding-bottom: 20px;
+}
+
 @media screen and (max-width: 850px) {
     .container {
         padding: 36px 12px;
     }
+
     .breadcrumb-container {
         padding-bottom: 32px;
     }
@@ -55,58 +63,73 @@
     .main-Leaflet {
         padding-bottom: 32px;
     }
-    .main-Leaflet :nth-child(3){
+
+    .main-Leaflet :nth-child(3) {
         padding-top: 32px;
     }
-    .main-Leaflet :nth-child(4){
+
+    .main-Leaflet :nth-child(4) {
         padding-top: 32px;
     }
-    
-    
+
+
     /* font */
     main .t-stroke-b-1 {
         -webkit-text-stroke-width: 1px;
     }
+
     main .fs-20 {
         font-size: 14px;
     }
+
     main .fs-24 {
         font-size: 14px;
     }
-    main .fs-32{
+
+    main .fs-32 {
         font-size: 18px;
     }
-    main .fs-40{
+
+    main .fs-40 {
         font-size: 20px;
     }
-    main .fs-52{
+
+    main .fs-52 {
         font-size: 24px;
     }
+
     main .fs-80 {
         font-size: 32px;
     }
 }
+
 @media screen and (min-width: 850px) and (max-width:1250px) {
-    
+
     /* font */
     main .t-stroke-b-1 {
         -webkit-text-stroke-width: 1px;
     }
+
     main .fs-20 {
         font-size: 14px;
     }
+
     main .fs-24 {
         font-size: 14px;
     }
+
     main .fs-32 {
         font-size: 20px;
     }
-    main .fs-40{
+
+    main .fs-40 {
         font-size: 30px;
     }
-    main .fs-52{
+
+    main .fs-52 {
         font-size: 40px;
     }
+
     main .fs-80 {
         font-size: 64px;
     }
@@ -114,18 +137,20 @@
 
 
 @media screen and (min-width: 480px) and (max-width: 850px) {
-    .main-Leaflet>img{
+    .main-Leaflet>img {
         width: 100%;
         height: 400px;
         object-fit: cover;
         object-position: center;
     }
+
     .child-container {
         padding: 0 60px;
     }
 }
+
 @media screen and (max-width: 480px) {
-    .main-Leaflet>img{
+    .main-Leaflet>img {
         width: 100%;
         height: 200px;
         object-fit: cover;
