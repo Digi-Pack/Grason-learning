@@ -40,11 +40,10 @@
     justify-content: center;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:850px) {
     #contact-info>div:nth-child(9)>div>div {
         flex-direction: column;
         align-items: start;
-        gap: 4px;
     }
 
     #contact-info>div:nth-child(9)>div a {
@@ -61,9 +60,5 @@
 
     #contact-info>div {
         padding: 20px 0;
-    }
-
-    main .ls-5 {
-        letter-spacing: 1px;
     }
 }

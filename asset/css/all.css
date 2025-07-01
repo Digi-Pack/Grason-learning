@@ -7,11 +7,6 @@
 a {
     user-select: none;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-label {
-    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -215,21 +210,19 @@ a {
 
 #go-top {
     position: fixed;
-    z-index: 1000000;
-    bottom: 0;
+    top: 70%;
     right: 0px;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(216, 216, 216);
     color: black;
-}
-
-#go-top img {
-    height: 100%;
-    width: 100%;
+    transition: all 0.3s ease-in-out;
+    font-size: 50px;
+    padding-bottom: 7px;
+    padding-left: 7px;
 }
 
 #go-top:hover {
@@ -247,12 +240,6 @@ a {
 }
 
 @media screen and (max-width: 850px) {
-
-    #go-top {
-        height: 60px;
-        width: 60px;
-    }
-
     .star-icon {
         height: 32px;
         margin-bottom: 32px;
