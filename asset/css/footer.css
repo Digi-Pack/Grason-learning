@@ -70,6 +70,12 @@ footer {
     #ft-section-1 {
         justify-content: center;
     }
+
+    #ft-section-1 svg {
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1500px) {

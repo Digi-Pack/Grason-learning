@@ -84,25 +84,29 @@
     gap: 49px;
 }
 
+.card-type-4-container .star-icon {
+    margin-bottom: 0;
+}
+
 .card-type-4 {
     padding: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 40px;
     transition: all 0.3s ease-in-out;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
 }
 
-.card-type-5 p {
-    height: 100px;
-}
+
 
 .card-type-4.active-card {
     /* border: 2px solid #293ECD; */
     box-shadow: 0 0 20px rgba(41, 62, 205, 0.3);
-    transform: scale(1.02);
 }
 
 .card-type-4 .card-footer {
-    padding-top: 32px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -126,6 +130,10 @@
 .card-type-4 .card-footer a:hover {
     background-color: #293ECD;
     color: #fff;
+}
+
+.card-type-5 p {
+    height: 100px;
 }
 
 .card-type-5-container {
@@ -214,6 +222,28 @@
         padding: 20px;
     }
 
+    .card-type-4-container {
+        gap: 20px;
+    }
+
+    .card-type-4 {
+        padding: 20px;
+    }
+
+    .card-type-4 .fs-18 {
+        font-size: 14px;
+    }
+
+    .card-type-4 .card-footer a {
+        width: 89px;
+        height: 40px;
+        padding: 8px 12px;
+    }
+
+    .card-type-4 {
+        gap: 20px;
+    }
+
     .card-type-5-container {
         display: grid;
         gap: 40px;
@@ -258,18 +288,11 @@
 
     }
 
-    .card-type-4 {
-        padding: 20px;
-    }
-
-    .card-type-4 .fs-18 {
-        font-size: 14px;
-    }
-
-    .card-type-4 .card-footer a {
-        width: 89px;
-        height: 40px;
-        padding: 8px 12px;
+    .card-type-2,
+    .card-type-3,
+    .card-type-4,
+    .card-type-5 {
+        border-radius: 20px;
     }
 }
 

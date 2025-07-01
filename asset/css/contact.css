@@ -39,10 +39,11 @@
     justify-content: center;
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:900px) {
     #contact-info>div:nth-child(9)>div>div {
         flex-direction: column;
         align-items: start;
+        gap: 4px;
     }
 
     #contact-info>div:nth-child(9)>div a {
@@ -52,11 +53,15 @@
     }
 
     #contact-info>div>p:nth-child(1) {
-        min-width: 110px;
+        min-width: 90px;
         padding-right: 16px;
     }
 
     #contact-info>div {
         padding: 20px 0;
+    }
+
+    main .ls-5 {
+        letter-spacing: 1px;
     }
 }
