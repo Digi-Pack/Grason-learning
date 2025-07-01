@@ -26,6 +26,15 @@
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 850px) and (max-width: 1346px) {
+    #m-section-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 0;
+    }
+}
+
 @media screen and (max-width: 850px) {
 
     #m-section-2 {
@@ -98,7 +107,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 850px) {
     #m-section-2 {
-        padding: 40px 60px;
+        /* padding: 40px 60px; */
     }
 
 }
