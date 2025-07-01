@@ -266,6 +266,15 @@ main>section:nth-child(1) {
         padding: 80px 12px;
     }
 
+    .main-container {
+        padding: 0;
+        padding-top: 80px;
+    }
+
+    .main-child-container {
+        padding: 0 14px;
+    }
+
     #m-section-1 {
         width: 100%;
         max-width: 1580px;

@@ -16,6 +16,16 @@ input[type="checkbox"] {
     width: 100%;
 }
 
+#hd-menu-1>li>a {
+    min-width: 100%;
+    display: flex;
+}
+
+#hd-menu-2>li>a {
+    min-width: 100%;
+    display: flex;
+}
+
 #hd-section {}
 
 #hd-section a img {

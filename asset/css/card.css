@@ -199,6 +199,7 @@
     }
 
     .card-type-3-container {
+        display: grid;
         gap: 20px;
     }
 
@@ -273,6 +274,10 @@
 }
 
 @media screen and (min-width:850px) and (max-width: 1110px) {
+    .card-type-3-container {
+        gap: 40px;
+    }
+
     .card-type-5-container {
         gap: 20px;
     }
