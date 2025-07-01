@@ -161,10 +161,6 @@
     letter-spacing: 2px;
 }
 
-.ls-3 {
-    letter-spacing: 3px;
-}
-
 .ls-4 {
     letter-spacing: 4px;
 }
@@ -175,10 +171,6 @@
 
 .ls-7 {
     letter-spacing: 7px;
-}
-
-.ls-8 {
-    letter-spacing: 8px;
 }
 
 .ls-10 {
@@ -212,10 +204,6 @@
 
     .ls-7 {
         letter-spacing: 4px;
-    }
-
-    .ls-8 {
-        letter-spacing: 4.5px;
     }
 
     .ls-10 {

@@ -103,12 +103,6 @@
     }
 }
 
-@media screen and (min-width: 850px) {
-    .container {
-        padding: 110px 60px;
-    }
-}
-
 @media screen and (min-width: 850px) and (max-width:1250px) {
 
     /* font */
@@ -142,7 +136,7 @@
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 850px) {
+@media screen and (min-width: 480px) and (max-width: 850px) {
     .main-Leaflet>img {
         width: 100%;
         height: 400px;
@@ -151,11 +145,11 @@
     }
 
     .child-container {
-        padding: 0 20px;
+        padding: 0 60px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .main-Leaflet>img {
         width: 100%;
         height: 200px;
