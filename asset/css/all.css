@@ -7,6 +7,7 @@
 a {
     user-select: none;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 :root {
@@ -221,9 +222,10 @@ a {
     background-color: rgb(216, 216, 216);
     color: black;
     transition: all 0.3s ease-in-out;
-    font-size: 50px;
-    padding-bottom: 7px;
-    padding-left: 7px;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-bottom: 4px;
+    padding-left: 2px;
 }
 
 #go-top:hover {
