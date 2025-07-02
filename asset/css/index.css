@@ -1,3 +1,7 @@
+#showService {
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     display: flex;
@@ -21,7 +25,6 @@ main>section:nth-child(1) {
 }
 
 #m-section-1 {
-    padding-top: -80px;
     width: 100%;
     max-width: 1580px;
     display: flex;
@@ -84,7 +87,8 @@ main>section:nth-child(1) {
     width: 600px;
     height: 451px;
     top: 83px;
-    left: 1304px;
+    right: -38px;
+    /* left: 1304px; */
     z-index: 0;
 }
 
@@ -92,8 +96,6 @@ main>section:nth-child(1) {
 #m-section-2 {
     position: relative;
 }
-
-
 
 
 .container-content {
@@ -147,6 +149,7 @@ main>section:nth-child(1) {
     padding-bottom: 80px;
     width: 100%;
     max-width: 593px;
+    text-align: justify;
 }
 
 #service-container {
@@ -159,12 +162,17 @@ main>section:nth-child(1) {
 
 #service-container div {
     width: 100%;
+}
 
+#service-container .left>div {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 #service-container div img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
 }
 
 .service-checkbox:checked+.service-label {
@@ -236,6 +244,15 @@ main>section:nth-child(1) {
     user-select: none;
 }
 
+#service-container .left .service-label:not(.active):hover {
+    background-color: #ffffff50;
+    /* 懸停時變亮的顏色 */
+    box-shadow: 0 8px 16px rgba(90, 201, 251, 0.404),
+        /* 懸停時陰影變大變明顯 */
+        0 0 20px rgba(90, 201, 251, 0.24);
+    /* 新增一個淺色光暈效果，模擬發光 */
+}
+
 #service-container .left>div>:nth-child(3) {
     top: calc(29/700*100%);
     left: calc(424/700*100%);
@@ -262,6 +279,10 @@ main>section:nth-child(1) {
 }
 
 @media screen and (max-width: 850px) {
+    #service-container div img {
+        width: 100%;
+    }
+
     .container {
         padding: 80px 12px;
     }
@@ -273,8 +294,8 @@ main>section:nth-child(1) {
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
-        gap: 40px;
-        padding-bottom: 10px;
+        gap: 32px;
+        padding-bottom: 15px;
     }
 
     .slogan>:nth-child(3) {
@@ -287,7 +308,7 @@ main>section:nth-child(1) {
     }
 
     .container-image {
-        width: 100%;
+        width: calc(100% + 30px);
         height: 243px;
         max-width: 1704px;
         position: relative;
@@ -354,6 +375,8 @@ main>section:nth-child(1) {
 
     #m-section-2 .container-content article {
         padding-bottom: 40px;
+        letter-spacing: 2.8px;
+        text-align: justify;
     }
 
     #service-container {
@@ -367,6 +390,8 @@ main>section:nth-child(1) {
 
     #m-section-1>p {
         padding-top: 0px;
+        letter-spacing: 2.8px;
+        max-width: unset;
     }
 
     main .ls-5 {
@@ -391,6 +416,12 @@ main>section:nth-child(1) {
 
     #news-container ul {
         padding: 20px 0;
+    }
+
+    #about-container .decorate-image {
+        width: 165px;
+        height: 136px;
+        top: 15px;
     }
 }
 
@@ -567,6 +598,7 @@ main>section:nth-child(1) {
     #m-section-1>p {
         padding-top: 0px;
         margin-left: 180px;
+
     }
 }
 
