@@ -1,180 +1,190 @@
+/* 大架構修改 */
 .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 110px 12px;
+  padding: 110px 12px;
+}
+.section-1 {
+  background-color: #222222;
+}
+.section-2 {
+  background-color: #f2f2f2;
 }
 
-.child-container {
-    width: 100%;
-    max-width: 1260px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
+#m-section-b {
+  gap: 60px;
 }
 
-.breadcrumb-container {
-    padding-bottom: 80px;
+#m-section-c {
+  gap: 80px;
 }
 
 .main-Leaflet {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 
-.main-Leaflet p {
-    padding-bottom: 12px;
+.slogan {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.main-Leaflet h1 {
-    /* padding-bottom: 80px; */
+@media screen and (max-width: 850px) {
+  .container {
+    padding: 36px 12px;
+  }
+
+  #m-section-b {
+    gap: 32px;
+    padding: 40px 0px 0px;
+  }
+
+  #m-section-c {
+    gap: 32px;
+  }
+
+  .main-Leaflet {
+    padding-bottom: 32px;
+  }
+
+  .slogan {
+    padding-top: 32px;
+  }
 }
 
-.main-Leaflet>:nth-child(3) {
-    padding-top: 80px;
+/* 麵包屑 */
+.breadcrumb-container {
+  padding-bottom: 80px;
+}
+.breadcrumb-container .breadcrumb * {
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: #ffffff;
 }
 
-.main-Leaflet>:nth-child(4) {
-    padding-top: 80px;
+@media screen and (max-width: 850px) {
+  .breadcrumb-container {
+    padding-bottom: 32px;
+  }
+  .breadcrumb-container .breadcrumb * {
+    letter-spacing: 3px;
+  }
 }
 
-.main-Leaflet>img {
+/* 文字樣式 */
+.decoraete-font-b {
+  font-weight: 900;
+  font-size: 80px;
+  -webkit-text-stroke: 2px #5ac9fb;
+  color: transparent;
+  letter-spacing: 17px;
+  padding-bottom: 12px;
+}
+
+.big-font-b {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 52px;
+  letter-spacing: 17px;
+}
+.title-font-b {
+  font-weight: 700;
+  font-size: 52px;
+  color: #5ac9fb;
+  letter-spacing: 10px;
+}
+.title-font-c {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+.content-font-b {
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 5px;
+  padding-top: 80px;
+}
+.content-font-c {
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 1250px) {
+  .decoraete-font-b {
+    -webkit-text-stroke-width: 1px;
+  }
+  .big-font-b {
+    font-size: 40px;
+  }
+  .title-font-b {
+    font-size: 40px;
+  }
+  .title-font-c {
+    font-size: 20px;
+  }
+  .content-font-b {
+    font-size: 14px;
+  }
+  .content-font-c {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .decoraete-font-b {
+    font-size: 32px;
+  }
+  .big-font-b {
+    font-size: 24px;
+    letter-spacing: 9px;
+  }
+  .title-font-b {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  .title-font-c {
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+  .content-font-b {
+    letter-spacing: 3px;
+    padding-top: 32px;
+  }
+  .content-font-c {
+    letter-spacing: 3px;
+  }
+}
+
+/* 圖片 */
+.show-image {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  object-position: center;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  .show-image {
     width: 100%;
-    height: 640px;
+    height: 400px;
     object-fit: cover;
     object-position: center;
-}
-
-#m-section-2 {
-    gap: 60px;
-}
-
-#m-section-3 {
-    gap: 80px;
-}
-
-
-.main-Leaflet .slogan>h3 {
-    padding-bottom: 20px;
-}
-
-@media screen and (max-width: 850px) {
-    .container {
-        padding: 36px 12px;
-    }
-
-    #m-section-2 {
-        gap: 32px;
-    }
-
-    #m-section-3 {
-        gap: 32px;
-    }
-
-    .breadcrumb-container {
-        padding-bottom: 32px;
-    }
-
-    .main-Leaflet {
-        padding-bottom: 32px;
-    }
-
-    .main-Leaflet :nth-child(3) {
-        padding-top: 32px;
-    }
-
-    .main-Leaflet :nth-child(4) {
-        padding-top: 32px;
-    }
-
-
-    /* font */
-    main .t-stroke-b-1 {
-        -webkit-text-stroke-width: 1px;
-    }
-
-    main .fs-20 {
-        font-size: 14px;
-    }
-
-    main .fs-24 {
-        font-size: 14px;
-    }
-
-    main .fs-32 {
-        font-size: 18px;
-    }
-
-    main .fs-40 {
-        font-size: 20px;
-    }
-
-    main .fs-52 {
-        font-size: 24px;
-    }
-
-    main .fs-80 {
-        font-size: 32px;
-    }
-}
-
-@media screen and (min-width: 850px) and (max-width:1250px) {
-
-    /* font */
-    main .t-stroke-b-1 {
-        -webkit-text-stroke-width: 1px;
-    }
-
-    main .fs-20 {
-        font-size: 14px;
-    }
-
-    main .fs-24 {
-        font-size: 14px;
-    }
-
-    main .fs-32 {
-        font-size: 20px;
-    }
-
-    main .fs-40 {
-        font-size: 30px;
-    }
-
-    main .fs-52 {
-        font-size: 40px;
-    }
-
-    main .fs-80 {
-        font-size: 64px;
-    }
-}
-
-
-@media screen and (max-width: 850px) {
-    #m-section-2 {
-        padding: 40px 0px 0px;
-    }
-
-    .main-Leaflet>img {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .child-container {
-        /* padding: 0 60px; */
-    }
+    padding-top: 32px;
+  }
+  .decoraete-font-b {
+    letter-spacing: 9px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .main-Leaflet>img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        object-position: center;
-    }
+  .show-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
